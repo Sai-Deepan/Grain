@@ -1,0 +1,33 @@
+# Make sure you have Pillow installed:
+# pip install pillow
+
+# 1. Import the required module from Pillow
+from PIL import Image
+
+# 2. Define the set of ASCII characters we'll use for rendering.
+#    Characters are ordered from darkest to lightest.
+ASCII_chars = ["@", "%", "#", "*", "+", "=", "-", ":", ".", " "]
+
+# 3. Resize the image to the desired width while maintaining aspect ratio.
+#    A height correction factor (0.55) is used to compensate for character height in terminal.
+#    This avoids stretched output.
+
+# 4. Convert the image to grayscale.
+#    Grayscale simplifies the data by giving each pixel a brightness value from 0 (black) to 255 (white).
+
+# 5. Convert each grayscale pixel into an ASCII character.
+#    - If background is "white": pixels >= 240 are turned into a blank space.
+#    - If background is "black": pixels <= 15 are turned into a blank space.
+#    - If no background is specified: all pixels are converted based on brightness.
+
+# 6. Full processing pipeline:
+#    Input image → Resize → Grayscale → ASCII mapping → Formatted ASCII string
+
+# 7. After conversion, the flat string of characters is reshaped into lines.
+#    Add a newline character (`\n`) every `new_width` characters to rebuild the 2D image structure.
+
+# 8. Take image path input from the user.
+#    - Check if the path is valid and the file exists.
+#    - Ask for background color preference: "white", "black", or none.
+
+# 9. Write the final ASCII art output to a file called "ASCII_img.txt"
