@@ -10,8 +10,8 @@ How It Works
 
 Image1 - 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d8bb602b-f47f-4632-a4e1-96ea4abc4ce9" width="45%" />
-  <img src="https://github.com/user-attachments/assets/b6d8ade4-060b-480f-aa0a-369a9b789a4e" width="45%" />
+  <img src="https://github.com/user-attachments/assets/d8bb602b-f47f-4632-a4e1-96ea4abc4ce9" height=500 width=500 />
+  <img src="https://github.com/user-attachments/assets/b6d8ade4-060b-480f-aa0a-369a9b789a4e" height=500 width=300 />
 </p>
 
 Image2 - 
@@ -30,5 +30,6 @@ Features
 Requirements
 - Python 3.x
 - Pillow
+
 
 
