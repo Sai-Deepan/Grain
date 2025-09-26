@@ -1,4 +1,4 @@
-# ASCII Image Converter
+# ASCII Image Converter 
 ## Convert any image into ASCII art using Python.  
 
 How It Works
@@ -30,6 +30,7 @@ Features
 Requirements
 - Python 3.x
 - Pillow
+
 
 
 
